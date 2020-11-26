@@ -15,7 +15,7 @@ In order to make use of this file, end users will need to dot he following:
 
 * Click to run the file
 * Enter a valid email address and password
-* Folow next prompts
+* Follow next prompts
 
 ## Compatibility
 
