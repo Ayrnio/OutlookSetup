@@ -49,6 +49,6 @@ IF EXIST reg query HKCU\Software\Microsoft\Office\15.0 (
 reg.exe add HKCU\Software\Microsoft\Office\15.0\Outlook\Profiles\MyEmail /f
 IF EXIST reg query HKCU\Software\Microsoft\Office\16.0\Outlook\Profiles\MyEmail (
 reg.exe add "HKEY_CURRENT_USER\SOFTWARE\Microsoft\Office\16.0\Outlook" /v "DefaultProfile" /t REG_SZ /d "MyEmail" /f
-IF EXIST reg query HKCU\Software\Microsoft\Office\15.0\Outlook\Profiles\MyIntermediaEmail(
+IF EXIST reg query HKCU\Software\Microsoft\Office\15.0\Outlook\Profiles\MyEmail(
 reg.exe add "HKEY_CURRENT_USER\SOFTWARE\Microsoft\Office\15.0\Outlook" /v "DefaultProfile" /t REG_SZ /d "MyEmail" /f
 start outlook.exe
