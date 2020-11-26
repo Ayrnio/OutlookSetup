@@ -20,6 +20,7 @@ OutlookSetup is compatible with the following versions of Outlook:
 ## Prerequisites
 
 * Requires admin permissions to run (self elevating)
+* Windows 10 or Windows 7 (minimum).
 
 ## User interaction requirements
 
