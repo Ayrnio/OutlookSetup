@@ -4,7 +4,7 @@
 
 A script to autoconfigure Outlook to provide a smoother and more seamless end-user experience in migration scenarios. Once run, the script will do the following:
 
-* Elevates run permissions level to admin
+* Elevates run permission level to admin
 * Shuts down Outlook
 * Creates a profile called "MyEmail"
 * Creates an HKEY value to set "MyEmail" as the default mail profile
