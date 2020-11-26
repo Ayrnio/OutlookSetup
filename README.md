@@ -16,6 +16,11 @@ OutlookSetup is compatible with the following versions of Outlook:
 * Outlook 2013
 * Outlook 2016
 * Outlook 2019
+
+## Prerequisites
+
+* Requires admin permissions to run (self elevating)
+
 ## User interaction requirements
 
 In order to make use of this file, end users will need to dot he following:
