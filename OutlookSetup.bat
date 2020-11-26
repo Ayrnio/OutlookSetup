@@ -38,17 +38,17 @@ cd /d %~dp0
 if '%1'=='ELEV' (del "%vbsGetPrivileges%" 1>nul 2>nul  &  shift /1)
 
 ::::::::::::::::::::::::::::
-::START
+::START OUTLOOK CONFIGURATION
 ::::::::::::::::::::::::::::
 
 @echo off
 taskkill /IM outlook.exe /F
 IF EXIST reg query HKCU\Software\Microsoft\Office\16.0 (
-reg.exe add HKCU\Software\Microsoft\Office\16.0\Outlook\Profiles\MyIntermediaEmail /f
+reg.exe add HKCU\Software\Microsoft\Office\16.0\Outlook\Profiles\MyEmail /f
 IF EXIST reg query HKCU\Software\Microsoft\Office\15.0 (
-reg.exe add HKCU\Software\Microsoft\Office\15.0\Outlook\Profiles\MyIntermediaEmail /f
-IF EXIST reg query HKCU\Software\Microsoft\Office\16.0\Outlook\Profiles\MyIntermediaEmail(
-reg.exe add "HKEY_CURRENT_USER\SOFTWARE\Microsoft\Office\16.0\Outlook" /v "DefaultProfile" /t REG_SZ /d "MyIntermediaEmail" /f
+reg.exe add HKCU\Software\Microsoft\Office\15.0\Outlook\Profiles\MyEmail /f
+IF EXIST reg query HKCU\Software\Microsoft\Office\16.0\Outlook\Profiles\MyEmail (
+reg.exe add "HKEY_CURRENT_USER\SOFTWARE\Microsoft\Office\16.0\Outlook" /v "DefaultProfile" /t REG_SZ /d "MyEmail" /f
 IF EXIST reg query HKCU\Software\Microsoft\Office\15.0\Outlook\Profiles\MyIntermediaEmail(
-reg.exe add "HKEY_CURRENT_USER\SOFTWARE\Microsoft\Office\15.0\Outlook" /v "DefaultProfile" /t REG_SZ /d "MyIntermediaEmail" /f
+reg.exe add "HKEY_CURRENT_USER\SOFTWARE\Microsoft\Office\15.0\Outlook" /v "DefaultProfile" /t REG_SZ /d "MyEmail" /f
 start outlook.exe
